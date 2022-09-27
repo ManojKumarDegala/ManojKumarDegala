@@ -82,27 +82,27 @@ public class PaymentPage {
 		
 		ClickonPaybutton();
 	        Reporter.log("Payment method started", true);
-	        Thread.sleep(5000);
+	     //   Thread.sleep(5000);
 	    ClickonProceed();
 	        Reporter.log("Proceed button Clicked", true);
-	        Thread.sleep(5000);
+	     //   Thread.sleep(5000);
 	    SelectPaymentmode();
 	        Reporter.log("Payment mode Clicked", true);
-	        Thread.sleep(8000);
+	     //   Thread.sleep(8000);
 	    Paymentmode();
 	        Reporter.log("Paymentmode selected", true);
-	        Thread.sleep(5000);
+	     //   Thread.sleep(5000);
 	    Paysavebtn();
 	        Reporter.log("Payment save button clicked", true);
 	    CompletewithoutPrint();
 	        Reporter.log("Complete without print button clicked", true);
-	        Thread.sleep(5000);
+	     //   Thread.sleep(5000);
 	    AddNotes();
 	        Reporter.log("Notes tab sucessfully clicked", true);
-	        Thread.sleep(5000);
+	    //    Thread.sleep(5000);
 	    Save();
 	        Reporter.log("save button clicked", true);
-	        Thread.sleep(5000);
+	     //   Thread.sleep(5000);
 	    Done();
 	        Reporter.log("Done button Clicked", true);
 	}

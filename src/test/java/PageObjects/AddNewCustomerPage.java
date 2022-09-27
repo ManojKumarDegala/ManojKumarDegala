@@ -41,7 +41,7 @@ public class AddNewCustomerPage {
 //	@AndroidFindBy(uiAutomator = "new UiScrollable(new UiSelector()).scrollIntoView("
 //	        + "new UiSelector().text(\"Address\"))")
 //	public WebElement Address;
-	
+//	
 //	public void Address() {
 //		Address.click();
 //	}
@@ -73,13 +73,13 @@ public class AddNewCustomerPage {
 	
 	public void AddNewCustomer() throws Throwable {
 		AddCustomerbtn();
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		AddIcon();
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 	}
 	public void Save() throws Throwable {
 		CustSave();
-		Thread.sleep(10000);	
+		//Thread.sleep(10000);	
 	}
 		
 		

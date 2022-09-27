@@ -6,8 +6,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 
 import Test.BaseClass;
+import io.appium.java_client.android.AndroidDriver;
 
 public class ItemsAddingtoCartPage {
+	AndroidDriver driver;
 	
 	public ItemsAddingtoCartPage()
 	{
@@ -21,6 +23,8 @@ public class ItemsAddingtoCartPage {
 	@FindBy(id="com.ns.mpos.nukkadshops:id/customTextView28")
 	public WebElement selectitem;
 	
+	
+	
 	public void ItemsSearchBar(String ItemName) {
 		Item.sendKeys(ItemName);
 	}
@@ -30,15 +34,20 @@ public class ItemsAddingtoCartPage {
 	}
 	
 	public void ItemsSearchbar(String Item) throws Throwable {
-		
+		Reporter.log("Item Searching Started", true);
 		ItemsSearchBar(Item);
-	    Reporter.log("Item Searching Started", true);
-	    Thread.sleep(5000);
+		Reporter.log("Item clicked Successfully", true);
+//		Actions act = new Actions(driver);
+//		act.moveToElement(selectitem).click().build().perform();
 	    SelectItem();
 	    Reporter.log("Item added Successfully", true);
 	}
 	
+
+	
+}
+	
 	
 	
 
-}
+

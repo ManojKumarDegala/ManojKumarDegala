@@ -16,8 +16,7 @@ public class AddCustomer extends ValidLoginTest{
 		
 		AddNewCustomerPage A = new AddNewCustomerPage();
 		A.AddCustomerbtn();
-		Thread.sleep(8000);
-
+	
 	  
  
 	}

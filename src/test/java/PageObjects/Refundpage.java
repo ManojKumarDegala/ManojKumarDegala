@@ -52,17 +52,17 @@ public class Refundpage {
 	public void refund() throws Throwable {
 		
 		firstbill.click();
-		Thread.sleep(4000);
+	//	Thread.sleep(4000);
 		Refundbtn.click();
-		Thread.sleep(4000);
+	//	Thread.sleep(4000);
 		selectall.click();
-		Thread.sleep(4000);
+	//	Thread.sleep(4000);
 		selectreason.click();
-		Thread.sleep(4000);
+	//	Thread.sleep(4000);
 		wrongvariant.click();
-		Thread.sleep(4000);
+	//	Thread.sleep(4000);
 		cash.click();
-		Thread.sleep(4000);
+	//	Thread.sleep(4000);
 		complete.click();
 	}
 	

@@ -131,36 +131,34 @@ public class BillingScreenPage {
 	public void WholeSalePrice() throws Throwable {
 		Reporter.log("Price type tab clicked", true);
     	PriceTab();
-	    Thread.sleep(2000);
     	WholesalePriceType();
     	Reporter.log("Price type changed to WholeSale Price", true);
-    	Thread.sleep(2000);
+    
 	}
 	
 	public void SpecialPrice() throws Throwable {
 		Reporter.log("Price type tab clicked", true);
     	PriceTab();
-	    Thread.sleep(2000);
     	SpecialPriceType();
     	Reporter.log("Price type changed to WholeSale Price", true);
-    	Thread.sleep(2000);
+    
 	}
 	
 	public void Retailprice() throws Throwable {
 		Reporter.log("Price type tab clicked", true);
     	PriceTab();
-	    Thread.sleep(2000);
+	 
     	RetailPriceType();
     	Reporter.log("Price type changed", true);
-    	Thread.sleep(2000);
+ 
 	}
 	
 	public void NewBillIcon() throws Throwable {
 		Reporter.log("New bill icon tab clicked", true);
-		Thread.sleep(2000);
+	
 		NewBillIcon.click();
 		Reporter.log("New bill icon tab clicked sucessfully", true);
-		Thread.sleep(2000);
+	
 	}
 	
 	

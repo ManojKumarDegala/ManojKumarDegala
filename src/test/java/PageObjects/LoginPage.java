@@ -10,6 +10,7 @@ public class LoginPage {
 	
 	public LoginPage(AppiumDriver driver)
 	{
+	
 		PageFactory.initElements(driver,this);
 	
 	}

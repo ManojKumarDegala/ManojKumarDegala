@@ -7,10 +7,11 @@ import org.testng.Reporter;
 
 import Test.BaseClass;
 
-public class MenuSelectionPage {
+public class MenuSelectionPage{
 	
 
 	public MenuSelectionPage()
+	
 	{
 		PageFactory.initElements(BaseClass.driver,this);
 	
@@ -162,50 +163,50 @@ public class MenuSelectionPage {
 	
 	public void Billing() throws Throwable {
 		Openslidermenu();
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		Clickonbillingtab();
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		Clickonnewbill();
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		Reporter.log("Billing UI Displayed Successful", true);
 		
 	}
 	
 	public void Transcations() throws Throwable {
 		Openslidermenu();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 		Clickonbillingtab();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 		ClickonTransactionTab();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 	}
 	
 	public void Settlement() throws Throwable {
 		Openslidermenu();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 		Clickonbillingtab();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 		ClickonSettlementTab();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 		
 	}
 	
 	public void Credit() throws Throwable {
 		Openslidermenu();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 		Clickonbillingtab();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 		ClickonCreditTab();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 	}
 	
 	public void Refund() throws Throwable {
 		Openslidermenu();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 		Clickonbillingtab();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 		ClickonRefundTab();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 	}
 	
 }

@@ -18,7 +18,6 @@ public class HomeTest extends ValidLoginTest{
 			MenuSelectionPage MSP = new MenuSelectionPage();
 			MSP.Billing();
 			String bill	= MSP.Billing.getText();
-			Thread.sleep(2000);
 			Assert.assertEquals(bill,"Billing");
 			Reporter.log(bill, true);
 		

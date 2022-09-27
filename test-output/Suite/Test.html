@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 28 14:09:42 IST 2022</td>
+<td>Started on:</td><td>Wed Aug 03 00:44:11 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>131 seconds (131168 ms)</td>
+<tr><td>Total time:</td><td>320 seconds (320877 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,27 +76,117 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test.AddNewCustomer.LoginTest()'><b>LoginTest</b><br>Test class: Test.AddNewCustomer<br/>
-<a href="#Output-550424075" onClick='toggleBox("Output-550424075", this, "Show output", "Hide output");'>Show output</a>
+<td title='Test.PaymentTest.Payment()'><b>Payment</b><br>Test class: Test.PaymentTest<br/>
+<a href="#Output-1465800495" onClick='toggleBox("Output-1465800495", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-550424075" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-550424075">
+<a href="#Output-1465800495" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1465800495">
+Payment method started<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-HCVDGHA&apos;, ip: &apos;192.168.29.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [4a544faf-0eba-4b13-a9fd-fce9cf5b5f7b, findElement {using=xpath, value=//android.widget.ImageButton[@content-desc=&quot;Open&quot;]}]
+Capabilities {appium:app: D:\Notes\NSPOS\src\mPOS_3_.apk, appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Notes\NSPOS\src\mPOS_3_.apk, automationName: uiautomator2, deviceName: Manoj Kumar Degala, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HUAWEI, appium:deviceModel: JSN-L42, appium:deviceName: BYS3Y18B18001995, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: BYS3Y18B18001995, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 10, appium:statBarHeight: 85, appium:takesScreenshot: true, appium:viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 4a544faf-0eba-4b13-a9fd-fce9cf5b5f7b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at PageObjects.MenuSelectionPage.Openslidermenu(MenuSelectionPage.java:83)
+	at PageObjects.MenuSelectionPage.Billing(MenuSelectionPage.java:164)
+	at Test.PaymentTest.Payment(PaymentTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1465800495", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1465800495'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-HCVDGHA&apos;, ip: &apos;192.168.29.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [4a544faf-0eba-4b13-a9fd-fce9cf5b5f7b, findElement {using=xpath, value=//android.widget.ImageButton[@content-desc=&quot;Open&quot;]}]
+Capabilities {appium:app: D:\Notes\NSPOS\src\mPOS_3_.apk, appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Notes\NSPOS\src\mPOS_3_.apk, automationName: uiautomator2, deviceName: Manoj Kumar Degala, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HUAWEI, appium:deviceModel: JSN-L42, appium:deviceName: BYS3Y18B18001995, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: BYS3Y18B18001995, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 10, appium:statBarHeight: 85, appium:takesScreenshot: true, appium:viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 4a544faf-0eba-4b13-a9fd-fce9cf5b5f7b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at PageObjects.MenuSelectionPage.Openslidermenu(MenuSelectionPage.java:83)
+	at PageObjects.MenuSelectionPage.Billing(MenuSelectionPage.java:164)
+	at Test.PaymentTest.Payment(PaymentTest.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>Test.PaymentTest@16ce702d</td></tr>
+<tr>
+<td title='Test.PaymentTest.LoginTest()'><b>LoginTest</b><br>Test class: Test.PaymentTest<br/>
+<a href="#Output-793485742" onClick='toggleBox("Output-793485742", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-793485742" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-793485742">
 LoginTest method started<br/>
-Username entered<br/>
-password entered<br/>
-Login button clicked<br/>
-Valid login details entered<br/>
-Login page opened successfully<br/>
 </div>
 </td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;DESKTOP-FD4DE75&apos;, ip: &apos;192.168.0.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+System info: host: &apos;DESKTOP-HCVDGHA&apos;, ip: &apos;192.168.29.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [265e74c4-58f3-42e6-9514-47982a1e9487, findElement {using=id, value=com.android.permissioncontroller:id/permission_allow_button}]
-Capabilities {appium:app: C:\Users\Nukkadshops\New gi..., appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Nukkadshops\New gi..., automationName: uiautomator2, deviceName: manoj123, platformName: android}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 12, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 265e74c4-58f3-42e6-9514-47982a1e9487
+Command: [4a544faf-0eba-4b13-a9fd-fce9cf5b5f7b, findElement {using=class name, value=android.widget.EditText}]
+Capabilities {appium:app: D:\Notes\NSPOS\src\mPOS_3_.apk, appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Notes\NSPOS\src\mPOS_3_.apk, automationName: uiautomator2, deviceName: Manoj Kumar Degala, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HUAWEI, appium:deviceModel: JSN-L42, appium:deviceName: BYS3Y18B18001995, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: BYS3Y18B18001995, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 10, appium:statBarHeight: 85, appium:takesScreenshot: true, appium:viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 4a544faf-0eba-4b13-a9fd-fce9cf5b5f7b
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -104,24 +194,24 @@ Session ID: 265e74c4-58f3-42e6-9514-47982a1e9487
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at PageObjects.LoginPage.ClickOnAllowbutton(LoginPage.java:52)
-	at Test.ValidLoginTest.LoginTest(ValidLoginTest.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+	at PageObjects.LoginPage.Enterusername2(LoginPage.java:39)
+	at Test.ValidLoginTest.LoginTest(ValidLoginTest.java:24)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace550424075", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace550424075'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace793485742", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace793485742'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;DESKTOP-FD4DE75&apos;, ip: &apos;192.168.0.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+System info: host: &apos;DESKTOP-HCVDGHA&apos;, ip: &apos;192.168.29.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [265e74c4-58f3-42e6-9514-47982a1e9487, findElement {using=id, value=com.android.permissioncontroller:id/permission_allow_button}]
-Capabilities {appium:app: C:\Users\Nukkadshops\New gi..., appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Nukkadshops\New gi..., automationName: uiautomator2, deviceName: manoj123, platformName: android}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 12, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 265e74c4-58f3-42e6-9514-47982a1e9487
+Command: [4a544faf-0eba-4b13-a9fd-fce9cf5b5f7b, findElement {using=class name, value=android.widget.EditText}]
+Capabilities {appium:app: D:\Notes\NSPOS\src\mPOS_3_.apk, appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Notes\NSPOS\src\mPOS_3_.apk, automationName: uiautomator2, deviceName: Manoj Kumar Degala, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HUAWEI, appium:deviceModel: JSN-L42, appium:deviceName: BYS3Y18B18001995, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: BYS3Y18B18001995, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 10, appium:statBarHeight: 85, appium:takesScreenshot: true, appium:viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 4a544faf-0eba-4b13-a9fd-fce9cf5b5f7b
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -134,14 +224,14 @@ Session ID: 265e74c4-58f3-42e6-9514-47982a1e9487
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at PageObjects.LoginPage.ClickOnAllowbutton(LoginPage.java:52)
-	at Test.ValidLoginTest.LoginTest(ValidLoginTest.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+	at PageObjects.LoginPage.Enterusername2(LoginPage.java:39)
+	at Test.ValidLoginTest.LoginTest(ValidLoginTest.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -171,30 +261,122 @@ Session ID: 265e74c4-58f3-42e6-9514-47982a1e9487
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>18</td>
-<td>Test.AddNewCustomer@16ce702d</td></tr>
+<td>20</td>
+<td>Test.PaymentTest@16ce702d</td></tr>
 <tr>
-<td title='Test.HomeTest.LoginTest()'><b>LoginTest</b><br>Test class: Test.HomeTest<br/>
-<a href="#Output-178575564" onClick='toggleBox("Output-178575564", this, "Show output", "Hide output");'>Show output</a>
+<td title='Test.AddItems_From_Searchbar.Itemsfromsearchbar()'><b>Itemsfromsearchbar</b><br>Test class: Test.AddItems_From_Searchbar<br/>
+<a href="#Output-1146045637" onClick='toggleBox("Output-1146045637", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-178575564" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-178575564">
+<a href="#Output-1146045637" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1146045637">
+Itemsfromsearchbar method started<br/>
+Billing UI Displayed Successful<br/>
+Billing<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-HCVDGHA&apos;, ip: &apos;192.168.29.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [d8eecaeb-cd22-4d4c-b43d-1f14aab2bc4f, findElement {using=id, value=com.ns.mpos.nukkadshops:id/fragment_cart_relative_layout_customer_details}]
+Capabilities {appium:app: D:\Notes\NSPOS\src\mPOS_3_.apk, appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Notes\NSPOS\src\mPOS_3_.apk, automationName: uiautomator2, deviceName: Manoj Kumar Degala, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HUAWEI, appium:deviceModel: JSN-L42, appium:deviceName: BYS3Y18B18001995, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: BYS3Y18B18001995, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 10, appium:statBarHeight: 85, appium:takesScreenshot: true, appium:viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d8eecaeb-cd22-4d4c-b43d-1f14aab2bc4f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at PageObjects.AddNewCustomerPage.AddCustomerbtn(AddNewCustomerPage.java:55)
+	at PageObjects.AddNewCustomerPage.AddNewCustomer(AddNewCustomerPage.java:75)
+	at Test.AddItems_From_Searchbar.Itemsfromsearchbar(AddItems_From_Searchbar.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1146045637", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1146045637'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-HCVDGHA&apos;, ip: &apos;192.168.29.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [d8eecaeb-cd22-4d4c-b43d-1f14aab2bc4f, findElement {using=id, value=com.ns.mpos.nukkadshops:id/fragment_cart_relative_layout_customer_details}]
+Capabilities {appium:app: D:\Notes\NSPOS\src\mPOS_3_.apk, appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Notes\NSPOS\src\mPOS_3_.apk, automationName: uiautomator2, deviceName: Manoj Kumar Degala, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HUAWEI, appium:deviceModel: JSN-L42, appium:deviceName: BYS3Y18B18001995, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: BYS3Y18B18001995, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 10, appium:statBarHeight: 85, appium:takesScreenshot: true, appium:viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d8eecaeb-cd22-4d4c-b43d-1f14aab2bc4f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at PageObjects.AddNewCustomerPage.AddCustomerbtn(AddNewCustomerPage.java:55)
+	at PageObjects.AddNewCustomerPage.AddNewCustomer(AddNewCustomerPage.java:75)
+	at Test.AddItems_From_Searchbar.Itemsfromsearchbar(AddItems_From_Searchbar.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>24</td>
+<td>Test.AddItems_From_Searchbar@71812481</td></tr>
+<tr>
+<td title='Test.WholeSalePriceChangeTest.LoginTest()'><b>LoginTest</b><br>Test class: Test.WholeSalePriceChangeTest<br/>
+<a href="#Output-2006166872" onClick='toggleBox("Output-2006166872", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2006166872" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2006166872">
 LoginTest method started<br/>
-Username entered<br/>
-password entered<br/>
-Login button clicked<br/>
-Valid login details entered<br/>
-Login page opened successfully<br/>
 </div>
 </td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;DESKTOP-FD4DE75&apos;, ip: &apos;192.168.0.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+System info: host: &apos;DESKTOP-HCVDGHA&apos;, ip: &apos;192.168.29.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ff698210-22c4-4841-9784-f301e59f5781, findElement {using=id, value=com.android.permissioncontroller:id/permission_allow_button}]
-Capabilities {appium:app: C:\Users\Nukkadshops\New gi..., appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Nukkadshops\New gi..., automationName: uiautomator2, deviceName: manoj123, platformName: android}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 12, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ff698210-22c4-4841-9784-f301e59f5781
+Command: [b2316a8c-84d0-474c-965d-51be4c8745a7, findElement {using=class name, value=android.widget.EditText}]
+Capabilities {appium:app: D:\Notes\NSPOS\src\mPOS_3_.apk, appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Notes\NSPOS\src\mPOS_3_.apk, automationName: uiautomator2, deviceName: Manoj Kumar Degala, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HUAWEI, appium:deviceModel: JSN-L42, appium:deviceName: BYS3Y18B18001995, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: BYS3Y18B18001995, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 10, appium:statBarHeight: 85, appium:takesScreenshot: true, appium:viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: b2316a8c-84d0-474c-965d-51be4c8745a7
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -202,24 +384,24 @@ Session ID: ff698210-22c4-4841-9784-f301e59f5781
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at PageObjects.LoginPage.ClickOnAllowbutton(LoginPage.java:52)
-	at Test.ValidLoginTest.LoginTest(ValidLoginTest.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+	at PageObjects.LoginPage.Enterusername2(LoginPage.java:39)
+	at Test.ValidLoginTest.LoginTest(ValidLoginTest.java:24)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace178575564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace178575564'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2006166872", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2006166872'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;DESKTOP-FD4DE75&apos;, ip: &apos;192.168.0.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+System info: host: &apos;DESKTOP-HCVDGHA&apos;, ip: &apos;192.168.29.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ff698210-22c4-4841-9784-f301e59f5781, findElement {using=id, value=com.android.permissioncontroller:id/permission_allow_button}]
-Capabilities {appium:app: C:\Users\Nukkadshops\New gi..., appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Nukkadshops\New gi..., automationName: uiautomator2, deviceName: manoj123, platformName: android}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 12, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ff698210-22c4-4841-9784-f301e59f5781
+Command: [b2316a8c-84d0-474c-965d-51be4c8745a7, findElement {using=class name, value=android.widget.EditText}]
+Capabilities {appium:app: D:\Notes\NSPOS\src\mPOS_3_.apk, appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Notes\NSPOS\src\mPOS_3_.apk, automationName: uiautomator2, deviceName: Manoj Kumar Degala, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HUAWEI, appium:deviceModel: JSN-L42, appium:deviceName: BYS3Y18B18001995, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: BYS3Y18B18001995, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 10, appium:statBarHeight: 85, appium:takesScreenshot: true, appium:viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: b2316a8c-84d0-474c-965d-51be4c8745a7
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -232,14 +414,14 @@ Session ID: ff698210-22c4-4841-9784-f301e59f5781
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at PageObjects.LoginPage.ClickOnAllowbutton(LoginPage.java:52)
-	at Test.ValidLoginTest.LoginTest(ValidLoginTest.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+	at PageObjects.LoginPage.Enterusername2(LoginPage.java:39)
+	at Test.ValidLoginTest.LoginTest(ValidLoginTest.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -269,25 +451,25 @@ Session ID: ff698210-22c4-4841-9784-f301e59f5781
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>18</td>
-<td>Test.HomeTest@535779e4</td></tr>
+<td>20</td>
+<td>Test.WholeSalePriceChangeTest@7ca20101</td></tr>
 <tr>
-<td title='Test.HomeTest.HomeScreen()'><b>HomeScreen</b><br>Test class: Test.HomeTest<br/>
-<a href="#Output-382044126" onClick='toggleBox("Output-382044126", this, "Show output", "Hide output");'>Show output</a>
+<td title='Test.WholeSalePriceChangeTest.Wholesaleprice()'><b>Wholesaleprice</b><br>Test class: Test.WholeSalePriceChangeTest<br/>
+<a href="#Output-302007694" onClick='toggleBox("Output-302007694", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-382044126" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-382044126">
-HomeScreen method started<br/>
+<a href="#Output-302007694" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-302007694">
+Wholesaleprice method started<br/>
 </div>
 </td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;DESKTOP-FD4DE75&apos;, ip: &apos;192.168.0.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+System info: host: &apos;DESKTOP-HCVDGHA&apos;, ip: &apos;192.168.29.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ff698210-22c4-4841-9784-f301e59f5781, findElement {using=xpath, value=//android.widget.ImageButton[@content-desc=&quot;Open&quot;]}]
-Capabilities {appium:app: C:\Users\Nukkadshops\New gi..., appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Nukkadshops\New gi..., automationName: uiautomator2, deviceName: manoj123, platformName: android}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 12, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ff698210-22c4-4841-9784-f301e59f5781
+Command: [b2316a8c-84d0-474c-965d-51be4c8745a7, findElement {using=xpath, value=//android.widget.ImageButton[@content-desc=&quot;Open&quot;]}]
+Capabilities {appium:app: D:\Notes\NSPOS\src\mPOS_3_.apk, appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Notes\NSPOS\src\mPOS_3_.apk, automationName: uiautomator2, deviceName: Manoj Kumar Degala, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HUAWEI, appium:deviceModel: JSN-L42, appium:deviceName: BYS3Y18B18001995, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: BYS3Y18B18001995, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 10, appium:statBarHeight: 85, appium:takesScreenshot: true, appium:viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: b2316a8c-84d0-474c-965d-51be4c8745a7
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -303,17 +485,17 @@ Session ID: ff698210-22c4-4841-9784-f301e59f5781
 	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
 	at PageObjects.MenuSelectionPage.Openslidermenu(MenuSelectionPage.java:83)
 	at PageObjects.MenuSelectionPage.Billing(MenuSelectionPage.java:164)
-	at Test.HomeTest.HomeScreen(HomeTest.java:19)
+	at Test.WholeSalePriceChangeTest.Wholesaleprice(WholeSalePriceChangeTest.java:28)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace382044126", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace382044126'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace302007694", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace302007694'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;DESKTOP-FD4DE75&apos;, ip: &apos;192.168.0.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+System info: host: &apos;DESKTOP-HCVDGHA&apos;, ip: &apos;192.168.29.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ff698210-22c4-4841-9784-f301e59f5781, findElement {using=xpath, value=//android.widget.ImageButton[@content-desc=&quot;Open&quot;]}]
-Capabilities {appium:app: C:\Users\Nukkadshops\New gi..., appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Nukkadshops\New gi..., automationName: uiautomator2, deviceName: manoj123, platformName: android}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 12, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ff698210-22c4-4841-9784-f301e59f5781
+Command: [b2316a8c-84d0-474c-965d-51be4c8745a7, findElement {using=xpath, value=//android.widget.ImageButton[@content-desc=&quot;Open&quot;]}]
+Capabilities {appium:app: D:\Notes\NSPOS\src\mPOS_3_.apk, appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Notes\NSPOS\src\mPOS_3_.apk, automationName: uiautomator2, deviceName: Manoj Kumar Degala, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HUAWEI, appium:deviceModel: JSN-L42, appium:deviceName: BYS3Y18B18001995, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: BYS3Y18B18001995, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 10, appium:statBarHeight: 85, appium:takesScreenshot: true, appium:viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: b2316a8c-84d0-474c-965d-51be4c8745a7
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -334,7 +516,7 @@ Session ID: ff698210-22c4-4841-9784-f301e59f5781
 	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
 	at PageObjects.MenuSelectionPage.Openslidermenu(MenuSelectionPage.java:83)
 	at PageObjects.MenuSelectionPage.Billing(MenuSelectionPage.java:164)
-	at Test.HomeTest.HomeScreen(HomeTest.java:19)
+	at Test.WholeSalePriceChangeTest.Wholesaleprice(WholeSalePriceChangeTest.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -364,103 +546,8 @@ Session ID: ff698210-22c4-4841-9784-f301e59f5781
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>Test.HomeTest@535779e4</td></tr>
-<tr>
-<td title='Test.AddNewCustomer.AddnewCust()'><b>AddnewCust</b><br>Test class: Test.AddNewCustomer<br/>
-<a href="#Output-1640832113" onClick='toggleBox("Output-1640832113", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1640832113" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1640832113">
-AddnewCust method started<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;DESKTOP-FD4DE75&apos;, ip: &apos;192.168.0.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [265e74c4-58f3-42e6-9514-47982a1e9487, findElement {using=xpath, value=//android.widget.ImageButton[@content-desc=&quot;Open&quot;]}]
-Capabilities {appium:app: C:\Users\Nukkadshops\New gi..., appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Nukkadshops\New gi..., automationName: uiautomator2, deviceName: manoj123, platformName: android}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 12, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 265e74c4-58f3-42e6-9514-47982a1e9487
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at PageObjects.MenuSelectionPage.Openslidermenu(MenuSelectionPage.java:83)
-	at PageObjects.MenuSelectionPage.Billing(MenuSelectionPage.java:164)
-	at Test.AddNewCustomer.AddnewCust(AddNewCustomer.java:24)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1640832113", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1640832113'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;DESKTOP-FD4DE75&apos;, ip: &apos;192.168.0.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [265e74c4-58f3-42e6-9514-47982a1e9487, findElement {using=xpath, value=//android.widget.ImageButton[@content-desc=&quot;Open&quot;]}]
-Capabilities {appium:app: C:\Users\Nukkadshops\New gi..., appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Nukkadshops\New gi..., automationName: uiautomator2, deviceName: manoj123, platformName: android}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 12, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 265e74c4-58f3-42e6-9514-47982a1e9487
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at PageObjects.MenuSelectionPage.Openslidermenu(MenuSelectionPage.java:83)
-	at PageObjects.MenuSelectionPage.Billing(MenuSelectionPage.java:164)
-	at Test.AddNewCustomer.AddnewCust(AddNewCustomer.java:24)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>4</td>
-<td>Test.AddNewCustomer@16ce702d</td></tr>
+<td>20</td>
+<td>Test.WholeSalePriceChangeTest@7ca20101</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -471,44 +558,278 @@ Session ID: 265e74c4-58f3-42e6-9514-47982a1e9487
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test.HomeTest.sampleTest()'><b>sampleTest</b><br>Test class: Test.HomeTest<br/>
-<a href="#Output-2048869869" onClick='toggleBox("Output-2048869869", this, "Show output", "Hide output");'>Show output</a>
+<td title='Test.SpecialPriceTypeTest.SpecialPrice()'><b>SpecialPrice</b><br>Test class: Test.SpecialPriceTypeTest<br/>
+<a href="#Output-1308491389" onClick='toggleBox("Output-1308491389", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2048869869" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2048869869">
+<a href="#Output-1308491389" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1308491389">
+SpecialPrice method started<br/>
+Billing UI Displayed Successful<br/>
+Billing<br/>
+Add New Customer<br/>
+Quick item started Successfully<br/>
+Quick items icon selected<br/>
+Item added Successfully<br/>
+Price type tab clicked<br/>
+Price type changed to WholeSale Price<br/>
+Payment method started<br/>
+Proceed button Clicked<br/>
+Payment mode Clicked<br/>
+Paymentmode selected<br/>
+Payment save button clicked<br/>
+Complete without print button clicked<br/>
+Notes tab sucessfully clicked<br/>
+save button clicked<br/>
+Done button Clicked<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>Test.SpecialPriceTypeTest@47f9738</td></tr>
+<tr>
+<td title='Test.AddItems_From_Searchbar.sampleTest()'><b>sampleTest</b><br>Test class: Test.AddItems_From_Searchbar<br/>
+<a href="#Output-2119713755" onClick='toggleBox("Output-2119713755", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2119713755" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2119713755">
 sampleTest method started<br/>
 I am in Mpos Test<br/>
 </div>
 </td>
 <td></td>
-<td>3</td>
-<td>Test.HomeTest@535779e4</td></tr>
+<td>0</td>
+<td>Test.AddItems_From_Searchbar@71812481</td></tr>
+<tr>
+<td title='Test.AddNewCustomer.LoginTest()'><b>LoginTest</b><br>Test class: Test.AddNewCustomer<br/>
+<a href="#Output-1213367860" onClick='toggleBox("Output-1213367860", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1213367860" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1213367860">
+LoginTest method started<br/>
+Username entered<br/>
+password entered<br/>
+Login button clicked<br/>
+Valid login details entered<br/>
+Login page opened successfully<br/>
+Home Page Displayed Successfully<br/>
+Home<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Test.AddNewCustomer@5dcb4f5f</td></tr>
+<tr>
+<td title='Test.AddItems_From_Searchbar.LoginTest()'><b>LoginTest</b><br>Test class: Test.AddItems_From_Searchbar<br/>
+<a href="#Output-1141783782" onClick='toggleBox("Output-1141783782", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1141783782" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1141783782">
+LoginTest method started<br/>
+Username entered<br/>
+password entered<br/>
+Login button clicked<br/>
+Valid login details entered<br/>
+Login page opened successfully<br/>
+Home Page Displayed Successfully<br/>
+Home<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>Test.AddItems_From_Searchbar@71812481</td></tr>
+<tr>
+<td title='Test.PriceTypeChangeTest.LoginTest()'><b>LoginTest</b><br>Test class: Test.PriceTypeChangeTest<br/>
+<a href="#Output-1345648093" onClick='toggleBox("Output-1345648093", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1345648093" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1345648093">
+LoginTest method started<br/>
+Username entered<br/>
+password entered<br/>
+Login button clicked<br/>
+Valid login details entered<br/>
+Login page opened successfully<br/>
+Home Page Displayed Successfully<br/>
+Home<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>Test.PriceTypeChangeTest@7b94089b</td></tr>
+<tr>
+<td title='Test.HomeTest.LoginTest()'><b>LoginTest</b><br>Test class: Test.HomeTest<br/>
+<a href="#Output-943219925" onClick='toggleBox("Output-943219925", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-943219925" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-943219925">
+LoginTest method started<br/>
+Username entered<br/>
+password entered<br/>
+Login button clicked<br/>
+Valid login details entered<br/>
+Login page opened successfully<br/>
+Home Page Displayed Successfully<br/>
+Home<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Test.HomeTest@2a62b5bc</td></tr>
+<tr>
+<td title='Test.SpecialPriceTypeTest.LoginTest()'><b>LoginTest</b><br>Test class: Test.SpecialPriceTypeTest<br/>
+<a href="#Output-40936992" onClick='toggleBox("Output-40936992", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-40936992" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-40936992">
+LoginTest method started<br/>
+Username entered<br/>
+password entered<br/>
+Login button clicked<br/>
+Valid login details entered<br/>
+Login page opened successfully<br/>
+Home Page Displayed Successfully<br/>
+Home<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>Test.SpecialPriceTypeTest@47f9738</td></tr>
+<tr>
+<td title='Test.HomeTest.HomeScreen()'><b>HomeScreen</b><br>Test class: Test.HomeTest<br/>
+<a href="#Output-2015521846" onClick='toggleBox("Output-2015521846", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2015521846" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2015521846">
+HomeScreen method started<br/>
+Billing UI Displayed Successful<br/>
+Billing<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Test.HomeTest@2a62b5bc</td></tr>
 <tr>
 <td title='Test.AddNewCustomer.sampleTest()'><b>sampleTest</b><br>Test class: Test.AddNewCustomer<br/>
-<a href="#Output-830381116" onClick='toggleBox("Output-830381116", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-770669178" onClick='toggleBox("Output-770669178", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-830381116" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-830381116">
+<a href="#Output-770669178" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-770669178">
 sampleTest method started<br/>
 I am in Mpos Test<br/>
 </div>
 </td>
 <td></td>
-<td>3</td>
-<td>Test.AddNewCustomer@16ce702d</td></tr>
+<td>0</td>
+<td>Test.AddNewCustomer@5dcb4f5f</td></tr>
 <tr>
-<td title='Test.QuickItems.sampleTest()'><b>sampleTest</b><br>Test class: Test.QuickItems<br/>
-<a href="#Output-1043584830" onClick='toggleBox("Output-1043584830", this, "Show output", "Hide output");'>Show output</a>
+<td title='Test.HomeTest.sampleTest()'><b>sampleTest</b><br>Test class: Test.HomeTest<br/>
+<a href="#Output-504634946" onClick='toggleBox("Output-504634946", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1043584830" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1043584830">
+<a href="#Output-504634946" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-504634946">
 sampleTest method started<br/>
 I am in Mpos Test<br/>
 </div>
 </td>
 <td></td>
-<td>3</td>
-<td>Test.QuickItems@7b94089b</td></tr>
+<td>0</td>
+<td>Test.HomeTest@2a62b5bc</td></tr>
+<tr>
+<td title='Test.PaymentTest.sampleTest()'><b>sampleTest</b><br>Test class: Test.PaymentTest<br/>
+<a href="#Output-1529305105" onClick='toggleBox("Output-1529305105", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1529305105" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1529305105">
+sampleTest method started<br/>
+I am in Mpos Test<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Test.PaymentTest@16ce702d</td></tr>
+<tr>
+<td title='Test.PriceTypeChangeTest.sampleTest()'><b>sampleTest</b><br>Test class: Test.PriceTypeChangeTest<br/>
+<a href="#Output-491825098" onClick='toggleBox("Output-491825098", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-491825098" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-491825098">
+sampleTest method started<br/>
+I am in Mpos Test<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Test.PriceTypeChangeTest@7b94089b</td></tr>
+<tr>
+<td title='Test.SpecialPriceTypeTest.sampleTest()'><b>sampleTest</b><br>Test class: Test.SpecialPriceTypeTest<br/>
+<a href="#Output-1246810186" onClick='toggleBox("Output-1246810186", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1246810186" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1246810186">
+sampleTest method started<br/>
+I am in Mpos Test<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Test.SpecialPriceTypeTest@47f9738</td></tr>
+<tr>
+<td title='Test.PriceTypeChangeTest.RetailType()'><b>RetailType</b><br>Test class: Test.PriceTypeChangeTest<br/>
+<a href="#Output-1487067641" onClick='toggleBox("Output-1487067641", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1487067641" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1487067641">
+RetailType method started<br/>
+Billing UI Displayed Successful<br/>
+Billing<br/>
+Add New Customer<br/>
+Quick item started Successfully<br/>
+Quick items icon selected<br/>
+Item added Successfully<br/>
+Price type tab clicked<br/>
+Price type changed<br/>
+Payment method started<br/>
+Proceed button Clicked<br/>
+Payment mode Clicked<br/>
+Paymentmode selected<br/>
+Payment save button clicked<br/>
+Complete without print button clicked<br/>
+Notes tab sucessfully clicked<br/>
+save button clicked<br/>
+Done button Clicked<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>Test.PriceTypeChangeTest@7b94089b</td></tr>
+<tr>
+<td title='Test.AddNewCustomer.AddnewCust()'><b>AddnewCust</b><br>Test class: Test.AddNewCustomer<br/>
+<a href="#Output-408543908" onClick='toggleBox("Output-408543908", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-408543908" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-408543908">
+AddnewCust method started<br/>
+Billing UI Displayed Successful<br/>
+Billing<br/>
+Add New Customer<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>Test.AddNewCustomer@5dcb4f5f</td></tr>
+<tr>
+<td title='Test.WholeSalePriceChangeTest.sampleTest()'><b>sampleTest</b><br>Test class: Test.WholeSalePriceChangeTest<br/>
+<a href="#Output-235532726" onClick='toggleBox("Output-235532726", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-235532726" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-235532726">
+sampleTest method started<br/>
+I am in Mpos Test<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Test.WholeSalePriceChangeTest@7ca20101</td></tr>
 </table><p>
 </body>
 </html>

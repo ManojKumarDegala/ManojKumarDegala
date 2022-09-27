@@ -16,30 +16,32 @@ import PageObjects.QuickItemsPage;
 
 
 public class PaymentTest extends ValidLoginTest {
-	@Test(priority=7)
+	@Test(priority=7 , invocationCount=5)
 	public void Payment() throws Throwable {
 		
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\AppiumTest\\NSPOS\\Global.properties");	
 		  Properties prop=new Properties();
 		  prop.load(fis);	
-		  Thread.sleep(3000);
+		 
 		  
 		//Menu Selection 
 		  MenuSelectionPage MSP = new MenuSelectionPage();
 			MSP.Billing();
 			String bill	= MSP.Billing.getText();
-			Thread.sleep(2000);
 			Assert.assertEquals(bill,"Billing");
 			Reporter.log(bill, true);
+	
 		
 			
 		  
-		
 		
 		//Customer adding
 			AddNewCustomerPage ANC = new AddNewCustomerPage();
 
 			ANC.AddNewCustomer();
+			String cust	= ANC.AddNewCustomer.getText();
+			Assert.assertEquals(cust,"Add New Customer");
+			Reporter.log(cust, true);
 			String CName =  (String) prop.get("CustName");
 			ANC.CustName(CName);
 			String CMobile =  (String) prop.get("CustMobile");
@@ -61,7 +63,11 @@ public class PaymentTest extends ValidLoginTest {
 		
 		//Payment method start
 		        PaymentPage add = new PaymentPage(); 
-		        add.Payment();	     	        
+		        add.Payment();	
+		        PaymentPage p = new PaymentPage();
+		        p.ClickonPaybutton();
+		        
+		
 		
 	}
 

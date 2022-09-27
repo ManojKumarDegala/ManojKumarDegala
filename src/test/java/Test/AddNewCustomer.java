@@ -17,13 +17,12 @@ public class AddNewCustomer extends ValidLoginTest{
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\AppiumTest\\NSPOS\\Global.properties");	
 		  Properties prop=new Properties();
 		  prop.load(fis);	
-		  Thread.sleep(3000); 
+		 
 		
 		//Menu Selection 
 		  MenuSelectionPage MSP = new MenuSelectionPage();
 			MSP.Billing();
 			String bill	= MSP.Billing.getText();
-			Thread.sleep(2000);
 			Assert.assertEquals(bill,"Billing");
 			Reporter.log(bill, true);
 		
@@ -32,10 +31,26 @@ public class AddNewCustomer extends ValidLoginTest{
 				AddNewCustomerPage ANC = new AddNewCustomerPage();
 
 				ANC.AddNewCustomer();
+				String cust	= ANC.AddNewCustomer.getText();
+				Assert.assertEquals(cust,"Add New Customer");
+				Reporter.log(cust, true);
 				String CName =  (String) prop.get("CustName");
 				ANC.CustName(CName);
 				String CMobile =  (String) prop.get("CustMobile");
 				ANC.CustMobile(CMobile);
+//            AndroidBy list= (AndroidBy)driver.findElement(By.id("com.ns.mpos.nukkadshops:id/customTextView21"));
+//			@SuppressWarnings("deprecation")
+//			AndroidBy	Listitem =(AndroidBy)driver.findElement(MobileBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView("+"new UiSelector().description(\"Address\"));"));
+//				JavascriptExecutor js = (JavascriptExecutor) driver;
+//				HashMap<String, String> scrollObject = new HashMap<String, String>();
+//				scrollObject.put("direction", "down");
+//				//scrollObject.put("element", ((RemoteWebElement) element).getId());
+//				js.executeScript("mobile: scroll", scrollObject);
+			
+				
+			//	System.out.println(Listitem.getLocation());
+			//	Listitem.click();
+			//	ANC.Loyalty();
 				ANC.Save();
 	}	
 		

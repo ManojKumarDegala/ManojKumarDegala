@@ -31,11 +31,11 @@ public class QuickItemsPage {
 	public void QuickItems() throws Throwable {
 		Reporter.log("Quick item started Successfully", true);
 		QuickItemsIcon();
-		Thread.sleep(8000);
+	//	Thread.sleep(8000);
 		Reporter.log("Quick items icon selected", true);
 		ClickonItems();
 		Reporter.log("Item added Successfully", true);
-		Thread.sleep(8000);
+	//	Thread.sleep(8000);
 		
 		
 		

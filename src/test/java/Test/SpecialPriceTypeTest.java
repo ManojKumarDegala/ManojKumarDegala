@@ -21,13 +21,12 @@ public class SpecialPriceTypeTest extends ValidLoginTest{
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\AppiumTest\\NSPOS\\Global.properties");	
 		  Properties prop=new Properties();
 		  prop.load(fis);	
-		  Thread.sleep(3000);
+		  
 		  
 	//Menu Selection 
 		  MenuSelectionPage MSP = new MenuSelectionPage();
 		  MSP.Billing();
 		  String bill	= MSP.Billing.getText();
-		  Thread.sleep(2000);
 		  Assert.assertEquals(bill,"Billing");
 		  Reporter.log(bill, true);
 		
@@ -35,17 +34,16 @@ public class SpecialPriceTypeTest extends ValidLoginTest{
 	//Customer adding
 	
 			AddNewCustomerPage ANC = new AddNewCustomerPage();
-
 			ANC.AddNewCustomer();
+			String cust	= ANC.AddNewCustomer.getText();
+			Assert.assertEquals(cust,"Add New Customer");
+			Reporter.log(cust, true);
 			String CName =  (String) prop.get("CustName");
 			ANC.CustName(CName);
 			String CMobile =  (String) prop.get("CustMobile");
 			ANC.CustMobile(CMobile);
 			ANC.Save();
-	     	String AddNC = ANC.AddNewCustomer.getText();
-	    	Thread.sleep(2000);
-	    	Assert.assertEquals(AddNC, "Add New Customer");
-	    	Reporter.log(AddNC, true);
+	     	
 		
 			
 	//Item Adding from QuickItems
